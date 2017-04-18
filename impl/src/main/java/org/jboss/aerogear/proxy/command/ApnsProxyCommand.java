@@ -65,7 +65,7 @@ public class ApnsProxyCommand extends NotificationRegisterEndpoint {
 
             final MockApnsServer server = serverBuilder.build();
 
-            server.registerDeviceTokenForTopic("org.aerogear.test", generateRandomToken(), null);
+            server.registerDeviceTokenForTopic("net.wessendorf.aerodoc", generateRandomToken(), null);
 
             server.start(apnsMockGatewayPort).await();
 
